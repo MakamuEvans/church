@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
-    <div class="row" style="height: auto" xmlns="http://www.w3.org/1999/html">
+    <div class="row" style="height: auto;" xmlns="http://www.w3.org/1999/html">
         @include('slider')
     </div>
-    <div class="col-md-10 col-md-offset-1" style="text-align: center;box-shadow: 2px 2px 5px #333">
+    <div class="col-md-10 col-md-offset-1" style="text-align: center;box-shadow: 2px 2px 5px #333;">
         <div class="row">
 
         <div class="col-md-7 faa" style="text-align: left;margin: 2%">
 
-            <div class="row" style="padding-left: 3%;padding-right: 3%;border-radius: 10px">
+            <div class="row" style="padding-left: 6%;padding-right: 3%;border-radius: 10px">
                 <h2 style="color: skyblue">
                     <u>Kakamega Friends' Church</u>
                 </h2>
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-bottom: 2%">
+        {{--<div class="row" style="margin-bottom: 2%">
             <div class="row">
                 <hr>
             </div>
@@ -111,6 +111,6 @@
 
             </div>
         </div>
-
+--}}
     </div>
 @endsection

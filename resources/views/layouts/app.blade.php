@@ -80,7 +80,7 @@
     </div>
 </nav>
 
-    <div class="row" style="font-family: 'Abhaya Libre', serif;">
+    <div class="row" style="font-family: 'Abhaya Libre', serif;width: 100%">
         @yield('content')
     </div>
 
@@ -88,6 +88,9 @@
             <div class="col-md-10 col-md-offset-1" style="text-align: center">
                 <hr>
                 ©Kakamega Friends' Church, 2016
+            </div>
+            <div class="col-md-10 col-md-offset-1" style="text-align: center">
+                Designed and Developed By Makamu Evans | <a href="mailto:makamuevans@gmail.com">makamuevans@gmail.com</a>
             </div>
 
     <!-- Scripts -->
