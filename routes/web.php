@@ -27,7 +27,8 @@ Route::get('services', 'CmsController@serviceindex');
 
 
 //admin routes
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('add-service', array('as' => 'add-service', 'uses' => 'CmsController@index'));
 
-Route::get('add-service', array('as'=>'add-service', 'uses'=>'CmsController@index'));
-
-Route::any('addingservice', 'CmsController@addingservice');
+    Route::any('addingservice', 'CmsController@addingservice');
+});

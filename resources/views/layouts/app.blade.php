@@ -61,6 +61,15 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li>
+                                <a href="{{url('add-service')}}">Add Service</a>
+                            </li>
+                            <li>
+                                <a href="">Add Event</a>
+                            </li>
+                            <li>
+                                <a href="">Add Announcement</a>
+                            </li>
+                            <li>
                                 <a href="{{ url('/logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
