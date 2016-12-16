@@ -39,9 +39,9 @@
                             <div class="row">
                                 <h3 style="color: #354e9d">Previous Sermons >></h3>
                                 @foreach($allservices as $all)
-                                    <div class="row" style="background-color: skyblue; margin-bottom: 1%;border-radius: 10px">
-                                        {{$all->date}}<br>
-                                        <h2>{{$all->topic}}</h2>
+                                    <div class="row" style="background-color: #354e9d; margin-bottom: 1%;border-radius: 10px;color: white">
+                                        <b>Dated:</b>{{$all->date}}<br>
+                                        <b>Topic</b><h2 style="color: white">{{$all->topic}}</h2>
                                     </div>
 
                                 @endforeach

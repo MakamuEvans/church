@@ -24,4 +24,11 @@ class HomeController extends Controller
         //dd($ibada);
         return view('newhome', compact('ibada'));
     }
+
+    public function quakers()
+    {
+        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        //dd($ibada);
+        return view('admin.quaker', compact('ibada'));
+    }
 }

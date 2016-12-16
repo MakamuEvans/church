@@ -17,9 +17,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('administration/quakers', function () {
-    return view('admin.quaker');
-});
+Route::get('administration/quakers', 'HomeController@quakers');
 
 Route::get('services', 'CmsController@serviceindex');
 
