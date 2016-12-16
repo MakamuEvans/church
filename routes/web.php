@@ -12,15 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('newhome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('administration', function () {
-    return view('admin.home');
+Route::get('administration/quakers', function () {
+    return view('admin.quaker');
 });
 
 Route::get('services', 'CmsController@serviceindex');
