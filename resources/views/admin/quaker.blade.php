@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb" style="background-color: #354e9d">
                         <li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
                         <li><a href="#">Administration</a><i class="icon-angle-right"></i></li>
                         <li class="active">Quakers</li>

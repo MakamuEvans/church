@@ -9,7 +9,7 @@ class Service extends Model
     //
     public $table='services';
 
-    public $timestamps=false;
+   // public $timestamps=false;
 
     protected $fillable = array('date', 'topic', 'verse', 'speaker', 'leader');
 }

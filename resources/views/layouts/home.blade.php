@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bootstrap 3 template for corporate business" />
     <!-- css -->
+    <link href={{url('css/church.css')}} rel="stylesheet">
     <link href={{url("css/bootstrap.min.css")}} rel="stylesheet" />
     <link href={{url("plugins/flexslider/flexslider.css")}} rel="stylesheet" media="screen" />
     <link href={{url("css/cubeportfolio.min.css")}} rel="stylesheet" />
@@ -36,11 +37,32 @@
                         </ul>
                     </div>
                     <div class="col-md-6" style="text-align: right">
-                        <a href="{{url('login')}}">
-                            <button class="btn btn-primary">
-                                Login
-                            </button>
-                        </a>
+                        @if (Auth::guest())
+                            <a href="{{url('login')}}">
+                                <button class="btn btn-primary">
+                                    Login
+                                </button>
+                            </a>
+                        @else
+                            <a href="{{url('add-service')}}">
+                                <button class="btn btn-primary">
+                                    Add Service
+                                </button>
+                            </a>
+                            <a href="{{ url('/logout') }}"
+                               onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                <button class="btn btn-warning">
+                                    Logout
+                                </button>
+
+                            </a>
+
+                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        @endif
+
                     </div>
                 </div>
             </div>
@@ -54,7 +76,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="{{url('images/finalkfc.png')}}" alt="" style="margin-bottom: 20px" width="auto" height="100" /></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{url('images/finalkfc.png')}}" alt="" style="margin-bottom: 20px" width="auto" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav" >
@@ -69,7 +91,7 @@
                             </ul>
                         </li>
                         <li><a href="{{url('services')}}" style="color: white">Services</a></li>
-                        <li><a href="portfolio.html" style="color: white">Events</a></li>
+                        <li><a href="" style="color: white">Events</a></li>
                     </ul>
                 </div>
             </div>
