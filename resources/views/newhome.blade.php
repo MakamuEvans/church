@@ -6,11 +6,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h3>Welcome to Kakamega Friends' Church</h3>
+                    <h3 style="color: #354e9d">Welcome to Kakamega Friends' Church</h3>
                     <img src="{{url('images/pic1.png')}}" alt="" width="100%" height="auto" style="max-height: 400px" class="img-responsive" />
 
 
-                    <h4>Brief History...</h4>
+                    <h4 style="color: #354e9d">Brief History...</h4>
                     <p>
                         Kakamega Friends' Church is a Quaker Church founded in 1981 as EAYM.<br>
                         It is Located in Kenya, Kakamega County and Shirere ward, Amalemba Village.<br>
@@ -31,7 +31,7 @@
                     <!-- end divider -->
 
 
-                    <h4>Our Motto</h4>
+                    <h4 style="color: #354e9d">Our Motto</h4>
                     <p>
                        Commitment and Service to the Church
 

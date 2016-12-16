@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb" style="background-color: #354e9d">
                         <li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
                         <li><a href="#">Services</a><i class="icon-angle-right"></i></li>
                     </ul>
@@ -21,7 +21,7 @@
                         <div class="col-md-6">
                             @foreach($currentservice as $current)
                                 <div class="row faa">
-                                    <h2 style="color: skyblue">This Week</h2>
+                                    <h2 style="color: #354e9d">This Week</h2>
                                     <h3><i class="fa fa-clock"></i> {{$current->date}}</h3>
                                     <div class="row" style="font-size: 20px">
                                         <b>TOPIC:</b><br>
@@ -37,7 +37,7 @@
                             @endforeach
 
                             <div class="row">
-                                <h3 style="color: skyblue">Previous Sermons >></h3>
+                                <h3 style="color: #354e9d">Previous Sermons >></h3>
                                 @foreach($allservices as $all)
                                     <div class="row" style="background-color: skyblue; margin-bottom: 1%;border-radius: 10px">
                                         {{$all->date}}<br>
@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-md-6" style="text-align: left;padding-left: 10%">
                             <div class="row">
-                                <h2 style="color: skyblue">Our Order of Services</h2>
+                                <h2 style="color: #354e9d">Our Order of Services</h2>
 
                                 9:15	-PRAISE AND WORSHIP<br>
 
@@ -72,7 +72,7 @@
 
                             </div>
                             <div class="row" style="margin-top: 2%">
-                                <h2 style="color: skyblue">Our Weekly Program</h2>
+                                <h2 style="color: #354e9d">Our Weekly Program</h2>
                                 <table class="table table-striped table-bordered">
                                     <thead>
                                     <tr bgcolor="black" style="color: white">

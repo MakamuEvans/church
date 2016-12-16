@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <div class="navbar navbar-default navbar-static-top">
+        <div class="navbar navbar-default navbar-static-top" style="background-color: #354e9d">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -57,10 +57,10 @@
                     <a class="navbar-brand" href="index.html"><img src="{{url('images/finalkfc.png')}}" alt="" style="margin-bottom: 20px" width="auto" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li><a href="{{url('/')}}">Home</a></li>
+                    <ul class="nav navbar-nav" >
+                        <li><a href="{{url('/')}}" style="color: white">Home</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Administration <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle " style="color: white" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Administration <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{url('administration/quakers')}}">QUAKERMEN</a></li>
                                 <li><a href="">SOcial Concern</a></li>
@@ -68,8 +68,8 @@
                                 <li><a href="">English Service</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{url('services')}}">Services</a></li>
-                        <li><a href="portfolio.html">Events</a></li>
+                        <li><a href="{{url('services')}}" style="color: white">Services</a></li>
+                        <li><a href="portfolio.html" style="color: white">Events</a></li>
                     </ul>
                 </div>
             </div>
