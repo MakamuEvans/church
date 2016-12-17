@@ -5,6 +5,9 @@
     <section id="content">
         <div class="container">
             <div class="row">
+                <div class="row" style="text-align: center;color: #354e9d">
+                    Bible Quote of the Day; -<i class="fa fa-quote-left"></i> Bible Quote to go here
+                </div>
                 <div class="col-lg-8">
                     <h3 style="color: #354e9d">Welcome to Kakamega Friends' Church</h3>
                     <img src="{{url('images/pic1.png')}}" alt="" width="100%" height="auto" style="max-height: 400px" class="img-responsive" />

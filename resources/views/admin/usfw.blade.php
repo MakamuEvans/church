@@ -23,7 +23,7 @@
                             <img src="{{url('images/photo.png')}}" height="auto" width="100%"  alt="logo">
                         </div>
 
-                        <h4>CHAIRMAN –TOM LWENYI</h4>
+                        <h4>CHAIRPERSON-FLORENCE LIHANDA</h4>
                         <p>
                         <blockquote>
                             <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, ei quod constituto qui. Summo labores expetendis ad quo, lorem luptatum et vis. No qui vidisse signiferumque...
@@ -34,10 +34,24 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{url('images/ad/ilolo.jpg')}}" height="auto" width="100%" style="max-height: 400px;overflow-y: hidden;border-radius: 10px"  alt="logo">
+                            <img src="{{url('images/ad/anno.jpg')}}" height="auto" width="100%" style="max-height: 400px;overflow-y: hidden;border-radius: 10px"  alt="logo">
                         </div>
 
-                        <h4>PASTOR –ILOLO PATRICK</h4>
+                        <h4>VICE CHAIR-EVERLYNE ANNO</h4>
+                        <p>
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, ei quod constituto qui. Summo labores expetendis ad quo, lorem luptatum et vis. No qui vidisse signiferumque...
+                        </blockquote>
+
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="{{url('images/photo.png')}}" height="auto" width="100%" style="max-height: 400px;overflow-y: hidden;border-radius: 10px"  alt="logo">
+                        </div>
+
+                        <h4>PASTOR –WILFREDA AGESA</h4>
                         <p>
                         <blockquote>
                             <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, ei quod constituto qui. Summo labores expetendis ad quo, lorem luptatum et vis. No qui vidisse signiferumque...
