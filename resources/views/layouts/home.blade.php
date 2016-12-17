@@ -76,7 +76,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{url('images/finalkfc.png')}}" alt="" style="margin-bottom: 20px" width="auto" height="100" /></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{url('images/logo1.png')}}" alt="" width="auto" height="60px" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav" >
@@ -85,9 +85,11 @@
                             <a href="#" class="dropdown-toggle " style="color: white" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Administration <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{url('administration/quakers')}}">QUAKERMEN</a></li>
-                                <li><a href="">SOcial Concern</a></li>
-                                <li><a href="">Youth Friends' Programme</a></li>
-                                <li><a href="">English Service</a></li>
+                                <li><a href="{{url('administration/usfw')}}">USFW</a></li>
+                                <li><a href="{{url('administration/yfp')}}">YFP</a></li>
+                                <li><a href="{{url('administration/sunday-school')}}">Sunday School</a></li>
+                                <li><a href="{{url('administration/ushers')}}">Ushers</a></li>
+                                <li><a href="{{url('administration/social-concern')}}">Social Concern</a></li>
                             </ul>
                         </li>
                         <li><a href="{{url('services')}}" style="color: white">Services</a></li>

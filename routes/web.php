@@ -18,6 +18,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('administration/quakers', 'HomeController@quakers');
+Route::get('administration/social-concern', 'HomeController@social');
+Route::get('administration/sunday-school', 'HomeController@sunday');
+Route::get('administration/usfw', 'HomeController@usfw');
+Route::get('administration/yfp', 'HomeController@yfp');
+Route::get('administration/ushers', 'HomeController@ushers');
 
 Route::get('services', 'CmsController@serviceindex');
 
