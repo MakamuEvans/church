@@ -39,6 +39,26 @@
                        Commitment and Service to the Church
 
                     </p>
+                    <!-- divider -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blankline">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end divider -->
+
+                    <h4 style="color: #354e9d">Latest Events</h4>
+                    @foreach($event as $value)
+                        <a href="{{url('events/'.$value->id.'/'.str_slug($value->title, '-'))}}">
+                        <div class="col-lg-6">
+                            <h6 style="color: #354e9d">{{$value->title}}</h6>
+                            <img src="{{url('/public/eventimages/'.$value->image)}}" alt="" class="img-responsive" />
+                        </div>
+                        </a>
+                    @endforeach
                 </div>
 
                 <div class="col-lg-4">

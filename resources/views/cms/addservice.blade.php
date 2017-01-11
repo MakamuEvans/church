@@ -28,7 +28,14 @@
                             @endif
                             {!! Form::open(array('url'=>'addingservice', 'class'=>'form-horizontal', 'method'=>'POST')) !!}
 
-                                Date:<input type="text" name="date" class="form-control">
+                                Date for Service:<input type="text" name="date" class="form-control" id="datepicker">
+                                Type<select class="form-control" name="type">
+                                    <option value="English Service">English Service</option>
+                                    <option value="Morning Service">Morning Service</option>
+                                    <option value="Monthly Service">Monthly Service</option>
+                                    <option value="Quarterly Service">Quarterly Service</option>
+                                    <option value="Sunday School">Sunday School</option>
+                                </select>
                                 Topic:<textarea name="topic" class="form-control">
 
                 </textarea>

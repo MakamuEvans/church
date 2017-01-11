@@ -11,5 +11,5 @@ class Service extends Model
 
    // public $timestamps=false;
 
-    protected $fillable = array('date', 'topic', 'verse', 'speaker', 'leader');
+    protected $fillable = array('date', 'topic', 'verse', 'speaker', 'leader', 'type');
 }

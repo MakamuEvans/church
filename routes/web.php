@@ -26,10 +26,15 @@ Route::get('administration/ushers', 'HomeController@ushers');
 
 Route::get('services', 'CmsController@serviceindex');
 
+Route::get('events', 'CmsController@events');
+Route::get('events/{id}/{title}', 'CmsController@fullevent');
+
 
 //admin routes
 Route::group(['middleware' => 'auth'], function () {
     Route::get('add-service', array('as' => 'add-service', 'uses' => 'CmsController@index'));
+    Route::get('add-event', array('as' => 'add-event', 'uses' => 'CmsController@addevent'));
 
     Route::any('addingservice', 'CmsController@addingservice');
+    Route::any('addingevent', 'CmsController@addingevent');
 });

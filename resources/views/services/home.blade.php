@@ -21,12 +21,12 @@
                         <div class="col-md-6">
                             @foreach($currentservice as $current)
                                 <div class="row faa">
-                                    <h2 style="color: #354e9d">This Week</h2>
+                                    <h2 style="color: #354e9d">Up Next</h2>
                                     <h3><i class="fa fa-clock"></i> {{$current->date}}</h3>
                                     <div class="row" style="font-size: 20px">
                                         <b>TOPIC:</b><br>
                                         {{$current->topic}}<br>
-                                        <b>TEXT:</b><br>
+                                        <b>VERSE:</b><br>
                                         <i>{{$current->verse}}</i><br>
                                         <b>SPEAKER:</b><br>
                                         {{$current->speaker}}<br>
@@ -39,12 +39,17 @@
                             <div class="row">
                                 <h3 style="color: #354e9d">Previous Sermons >></h3>
                                 @foreach($allservices as $all)
-                                    <div class="row" style="background-color: #354e9d; margin-bottom: 1%;border-radius: 10px;color: white">
-                                        <b>Dated:</b>{{$all->date}}<br>
-                                        <b>Topic</b><h2 style="color: white">{{$all->topic}}</h2>
+                                    <div class="row" style="margin-bottom: 1%;border-radius: 10px;border: double 2px red;padding: 5px">
+                                        <b>Dated:</b>{{$all->date}} <i class="pull-right">{{$all->type}}</i><br>
+                                        <hr>
+                                        <b>Topic</b>{{$all->topic}}<br>
+                                        <b>Verse</b>{{$all->verse}}<br>
+                                        <b>Speaker</b>{{$all->speaker}}<br>
                                     </div>
 
                                 @endforeach
+
+                                {!! $allservices->render() !!}
                             </div>
 
                         </div>

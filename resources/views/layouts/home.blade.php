@@ -14,14 +14,39 @@
 
     <!-- Theme skin -->
     <link id="t-colors" href={{url("skins/default.css")}} rel="stylesheet" />
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- boxed bg -->
     <link id="bodybg" href={{url("bodybg/bg1.css")}} rel="stylesheet" type="text/css" />
+    <script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
+    <script>
+        window.onload = function() {
+            CKEDITOR.replace( 'text' );
+            CKEDITOR.replace( 'summary' );
+        };
+    </script>
 
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
+    <!-- Javascript -->
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker({
+                dateFormat:"yy-mm-dd"
+
+            });
+        });
+    </script>
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1090278264384599";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 
 <div id="wrapper">
@@ -32,7 +57,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="topleft-info">
-                            <li><i class="fa fa-mail-reply"></i> <a href="mailto:info@kakamegafriends.co.ke">Mail Us</a> </li>
+                            <li><i class="fa fa-mail-reply"></i> <a href="mailto:info@kakamegafriends.co.ke">info@kakamegafriends.co.ke</a> </li>
                             <li><i class="fa fa-phone"></i> +(254) 000000000 </a> </li>
                         </ul>
                     </div>
@@ -47,6 +72,11 @@
                             <a href="{{url('add-service')}}">
                                 <button class="btn btn-primary">
                                     Add Service
+                                </button>
+                            </a>
+                            <a href="{{url('add-event')}}">
+                                <button class="btn btn-primary">
+                                    Add Event
                                 </button>
                             </a>
                             <a href="{{ url('/logout') }}"
@@ -93,7 +123,7 @@
                             </ul>
                         </li>
                         <li><a href="{{url('services')}}" style="color: white">Services</a></li>
-                        <li><a href="" style="color: white">Events</a></li>
+                        <li><a href="{{url('events')}}" style="color: white">Events</a></li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +148,7 @@
                                     Licensing information: https://bootstrapmade.com/license/
                                     Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Sailor
                                 -->
-                                <a href="mailto:makamuevans@gmail.com">Designed  by Makamu L Evans.</a>
+                                <a href="">Designed  by Makamu L Evans.</a><a href="mailto:makamuevans@gmail.com">Mail me.</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +169,9 @@
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
 <!-- Placed at the end of the document so the pages load faster -->
-<script src={{url("js/jquery.min.js")}}></script>
+
+
+{{--<script src={{url("js/jquery.min.js")}}></script>--}}
 <script src={{url("js/modernizr.custom.js")}}></script>
 <script src={{url("js/jquery.easing.1.3.js")}}></script>
 <script src={{"js/bootstrap.min.js"}}></script>
@@ -153,7 +185,5 @@
 <script src={{"js/google-code-prettify/prettify.js"}}></script>
 <script src={{"js/animate.js"}}></script>
 <script src={{"js/custom.js"}}></script>
-
-
 </body>
 </html>

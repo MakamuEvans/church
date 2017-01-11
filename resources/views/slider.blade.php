@@ -12,25 +12,22 @@
                         <li>
                             <img src="{{url('images/slider/church.jpg')}}" style="width: 100%;height: auto;max-height: 500px" alt="" />
                             <div class="flex-caption">
-                                <h3>Title 1</h3>
-                                <p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p>
-                                <a href="#" class="btn btn-theme">Learn More</a>
+                                <h3>Our Choir</h3>
+                                <p>The Church choir preparing for a presentation, during one of the Services.</p>
                             </div>
                         </li>
                         <li>
                             <img src="{{url('images/slider/speech.jpg')}}" style="width: 100%;height: auto;max-height: 500px" alt="" />
                             <div class="flex-caption">
-                                <h3>Title 2</h3>
-                                <p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p>
-                                <a href="#" class="btn btn-theme">Learn More</a>
+                                <h3>Our Church</h3>
+                                <p>One of our Church members Delivering a Speech..</p>
                             </div>
                         </li>
                         <li>
                             <img src="{{url('images/slider/usfw1.jpg')}}" style="width: 100%;height: auto;max-height: 500px" alt="" />
                             <div class="flex-caption">
-                                <h3>Title 3</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p>
-                                <a href="#" class="btn btn-theme">Learn More</a>
+                                <h3>Women of the Church</h3>
+                                <p>Church women about to make a presentation in CHurch.</p>
                             </div>
                         </li>
                     </ul>

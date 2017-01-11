@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Service;
+use App\Event;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -20,50 +21,57 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('newhome', compact('ibada'));
+        return view('newhome', compact('ibada', 'event'));
     }
 
     public function quakers()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('admin.quaker', compact('ibada'));
+        return view('admin.quaker', compact('ibada', 'event'));
     }
 
     public function usfw()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('admin.usfw', compact('ibada'));
+        return view('admin.usfw', compact('ibada', 'event'));
     }
 
     public function yfp()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('admin.yfp', compact('ibada'));
+        return view('admin.yfp', compact('ibada', 'event'));
     }
 
     public function social()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('admin.social', compact('ibada'));
+        return view('admin.social', compact('ibada', 'event'));
     }
 
     public function ushers()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('admin.ushers', compact('ibada'));
+        return view('admin.ushers', compact('ibada', 'event'));
     }
 
     public function sunday()
     {
-        $ibada = Service::orderBy('id', 'DESC')->take(3)->get();
+        $event = Event::orderBy('id', 'DESC')->take(2)->get();
+        $ibada = Service::orderBy('id', 'DESC')->take(2)->get();
         //dd($ibada);
-        return view('admin.sunday', compact('ibada'));
+        return view('admin.sunday', compact('ibada', 'event'));
     }
 }
