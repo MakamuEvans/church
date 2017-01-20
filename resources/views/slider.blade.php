@@ -13,14 +13,14 @@
                             <img src="{{url('images/slider/church.jpg')}}" style="width: 100%;height: auto;max-height: 500px" alt="" />
                             <div class="flex-caption">
                                 <h3>Our Choir</h3>
-                                <p>The Church choir preparing for a presentation, during one of the Services.</p>
+                                <p>Quakermen Choir presenting during a family service.</p>
                             </div>
                         </li>
                         <li>
                             <img src="{{url('images/slider/speech.jpg')}}" style="width: 100%;height: auto;max-height: 500px" alt="" />
                             <div class="flex-caption">
-                                <h3>Our Church</h3>
-                                <p>One of our Church members Delivering a Speech..</p>
+                                <h3>Ministering</h3>
+                                <p>Evangelist Jessica ministering during a youth's English Service.</p>
                             </div>
                         </li>
                         <li>

@@ -26,9 +26,20 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                            @if (count($errors) > 0)
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                         {!! Form::open(array('url'=>'addingevent','files'=>true,'class'=>'form-horizontal', 'method'=>'POST')) !!}
                             Title:
                             <input type="text" name="title" placeholder="Event Title" class="form-control" style="margin-bottom: 10px">
+                            On:
+                            <input type="text" name="date" class="form-control" id="datepicker" style="margin-bottom: 10px">
                             Cover Image:
                             {!! Form::file('image', null) !!}
 

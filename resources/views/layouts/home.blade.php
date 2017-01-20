@@ -58,7 +58,7 @@
                     <div class="col-md-6">
                         <ul class="topleft-info">
                             <li><i class="fa fa-mail-reply"></i> <a href="mailto:info@kakamegafriends.co.ke">info@kakamegafriends.co.ke</a> </li>
-                            <li><i class="fa fa-phone"></i> +(254) 000000000 </a> </li>
+                            <li><i class="fa fa-phone"></i> +(254) 72000-5813 </a> </li>
                         </ul>
                     </div>
                     <div class="col-md-6" style="text-align: right">

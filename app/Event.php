@@ -11,5 +11,5 @@ class Event extends Model
 
     // public $timestamps=false;
 
-    protected $fillable = array('title', 'image', 'content', 'type');
+    protected $fillable = array('title', 'image', 'content', 'type', 'dated');
 }

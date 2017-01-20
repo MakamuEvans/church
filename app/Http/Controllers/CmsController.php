@@ -43,6 +43,7 @@ class CmsController extends Controller
             'image'=>'mimes:jpeg,jpg,png,gif|required|max:10000'
 
         ]);
+        //dd($request->all());
 
         $file = Input::file('image');//$request->file('contentzip');
 
@@ -65,6 +66,7 @@ class CmsController extends Controller
         Event::create(array(
             'title'=>Input::get('title'),
             'type'=>Input::get('type'),
+            'dated'=>Input::get('date'),
             'image'=>$name,
             'content'=>Input::get('text'),
 
